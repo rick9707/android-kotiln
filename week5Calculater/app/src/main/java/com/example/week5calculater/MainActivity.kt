@@ -1,15 +1,20 @@
 package com.example.week5calculater
 
+import android.annotation.SuppressLint
 import android.content.Context
+import android.icu.lang.UCharacter.GraphemeClusterBreak.V
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MotionEvent
 import android.view.View
 import android.view.inputmethod.InputMethodManager
+import android.widget.Button
+import android.widget.Toast
 import com.example.week5calculater.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     lateinit var binding: ActivityMainBinding
+    @SuppressLint("StringFormatInvalid")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -66,6 +71,18 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(p0: View?) {
+        var input:String = (V as Button).text.toString()
+        if(binding.num1.isFocused){
+            input = binding.num1.text.toString() + input
+            binding.num1.setText(input)
+        }
+        else if(binding.num2.isFocused){
+            input = binding.num2.text.toString() + input
+            binding.num2.setText(input)
+        }
+        else{
+            Toast.makeText(applicationContext, "please click num1 or num2", Toast.LENGTH_LONG).show()
+        }
         TODO("Not yet implemented")
     }
 }
