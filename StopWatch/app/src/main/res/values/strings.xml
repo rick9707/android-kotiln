@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">StopWatch</string>
-    <string name="done">%s년 %s월 %s일 %s시 %s분</string>
+    <string name="done" translatable="false">%s년 %s월 %s일 %s시 %s분</string>
 </resources>
