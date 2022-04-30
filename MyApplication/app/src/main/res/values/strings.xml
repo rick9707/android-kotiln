@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="res">%s</string>
+    <string name="results">%s</string>
 </resources>
