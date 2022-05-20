@@ -89,7 +89,8 @@ class MainActivity : AppCompatActivity() {
             paint.strokeWidth = 5f
             paint.style = Paint.Style.STROKE
             paint.color = Color.RED
-            for (i in myShapes.indices) { //리스트 요소 처리
+            for (i in myShapes.indices) {
+
                 val shape2 = myShapes[i]
 
                 when(shape2.shapeType) {
