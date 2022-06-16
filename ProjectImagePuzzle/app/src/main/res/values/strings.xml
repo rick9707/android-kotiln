@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ProjectImagePuzzle</string>
+    <string name="image">Image</string>
+    <string name="source_type">The image source type</string>
+    <string name="build_in_assets">                     아래의 퍼즐을 선택해주세요</string>
+    <string name="image_puzzle">Puzzle of image</string>
+    <string name="error">Error</string>
+    <string name="result">Result</string>
+    <string name="reset">Reset</string>
+</resources>

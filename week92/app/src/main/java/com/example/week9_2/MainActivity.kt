@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menu?.add(0,1,0, "Draw Line")
         menu?.add(0,2,0,"Draw Circle")
-        menu?.add(0,3,0, "Draw Square")
+        menu?.add(0,3,0, "Draw Rect")
         return super.onCreateOptionsMenu(menu)
     }
 
