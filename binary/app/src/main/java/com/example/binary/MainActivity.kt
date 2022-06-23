@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 }
 
 class MyCustomView(context: Context) : View(context){
-    var tree_array = arrayOf(0,9,8,7,6,5,4,3,2,1,0)
+    var tree_array = arrayOf(9,8,7,6,5,4,3,2,1,0)
     var arr = tree_array
     var i = 1
     var line = 2
